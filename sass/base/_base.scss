@@ -9,15 +9,15 @@
 html {
     font-size: 62.5%;
 
-    @include responde(tab-port) {
-        font-size: 50%;
-    }
-
-    @include responde(tab-land) {
+    @include respond(tab-land) {
         font-size: 56.25%;
     }
 
-    @include responde(big-desktop) {
+    @include respond(tab-port) {
+        font-size: 50%;
+    }
+
+    @include respond(big-desktop) {
         font-size: 75%;
     }
 }
